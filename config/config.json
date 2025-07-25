@@ -1,0 +1,30 @@
+{
+  "collection": {
+    "interval_minutes": 5,
+    "sensors": {
+      "cpu_temp": true,
+      "gpu_temp": true,
+      "ssd_temp": true,
+      "external_sensors": false
+    },
+    "storage_devices": [
+      "/dev/nvme0n1"
+    ],
+    "external_sensors": {
+      "outdoor_temp": {
+        "plugin": "ds18b20",
+        "device_id": null,
+        "description": "Outdoor Temperature"
+      }
+    }
+  },
+  "storage": {
+    "database_file": "data/temperature_data.db",
+    "retention_days": 30
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8080,
+    "debug": false
+  }
+}

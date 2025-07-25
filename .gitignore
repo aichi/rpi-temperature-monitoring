@@ -1,0 +1,108 @@
+# Raspberry Pi Temperature Monitor - Git Ignore File
+
+# Data and log files - these contain runtime data and should not be versioned
+data/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.pid
+/tmp/
+
+# Configuration files with sensitive data (if any)
+# Uncomment if you have sensitive config files:
+# config/local_config.json
+# config/secrets.json
+
+# Node modules (if any web dependencies are added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pytest cache
+.pytest_cache/
+.coverage
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Local development files
+local_test.py
+debug_*.py
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Documentation build files
+docs/_build/
+docs/.doctrees/
+
+# Service files that might be generated
+/etc/systemd/system/pi-temp-*.service
+
+# Any local override configs
+config/local.json
+config/override.json
