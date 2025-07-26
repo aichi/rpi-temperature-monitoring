@@ -1,6 +1,23 @@
 # Raspberry Pi Temperature Monitor
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-rpi--temperature--monitoring-blue?logo=github)](https://github.com/aichi/rpi-temperature-monitoring)
+
 A web-based temperature monitoring system for Raspberry Pi that tracks CPU, GPU, multiple SSD/NVME devices, and pluggable external sensors with historical data visualization.
+
+## Quick Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/aichi/rpi-temperature-monitoring.git
+cd rpi-temperature-monitoring
+
+# Setup permissions and test
+./scripts/setup_sudo.sh
+python3 scripts/test_system.py
+
+# Start monitoring
+./scripts/start.sh
+```
 
 ## Features
 

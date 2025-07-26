@@ -1,5 +1,17 @@
 # Git Workflow for Raspberry Pi Temperature Monitor
 
+## Repository Setup
+
+This repository is connected to GitHub at: https://github.com/aichi/rpi-temperature-monitoring.git
+
+### Initial Setup (Already Done)
+The repository has been initialized and connected to GitHub with:
+```bash
+git init
+git remote add origin https://github.com/aichi/rpi-temperature-monitoring.git
+git push -u origin master
+```
+
 ## Repository Structure
 
 This repository contains a complete temperature monitoring system for Raspberry Pi with the following key components:
@@ -102,16 +114,39 @@ When making significant changes:
 
 ## Backup and Remote Repositories
 
-To backup to a remote repository:
+### Current Repository
+This repository is connected to GitHub at:
+**https://github.com/aichi/rpi-temperature-monitoring.git**
+
+### Working with the Remote Repository
 ```bash
-# Add remote
-git remote add origin https://github.com/username/pi-temp-monitor.git
+# Pull latest changes from GitHub
+git pull origin master
 
-# Push to remote
-git push -u origin master
+# Push local changes to GitHub
+git push origin master
 
-# Push tags
+# Push tags to GitHub
 git push --tags
+
+# Clone the repository elsewhere
+git clone https://github.com/aichi/rpi-temperature-monitoring.git
+```
+
+### Setting up on a new Raspberry Pi
+```bash
+# Clone the repository
+git clone https://github.com/aichi/rpi-temperature-monitoring.git
+cd rpi-temperature-monitoring
+
+# Setup sudo permissions
+./scripts/setup_sudo.sh
+
+# Test the system
+python3 scripts/test_system.py
+
+# Start monitoring
+./scripts/start.sh
 ```
 
 ## Troubleshooting
